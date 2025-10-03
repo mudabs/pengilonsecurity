@@ -8,8 +8,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-12 sm:py-0">
       <div className="absolute inset-0">
         <img
           src={heroBanner}
@@ -19,14 +18,12 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black/60" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-        {/* Company Logo */}
-        <div className="flex justify-center mb-6">
+      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 space-y-6">
+        <div className="flex justify-center">
           <img
             src={logo}
             alt="Company Logo"
-            className="h-32 w-auto" // ~80px tall
+            className="h-20 sm:h-24 md:h-32 w-auto max-w-[80%]"
           />
         </div>
 
